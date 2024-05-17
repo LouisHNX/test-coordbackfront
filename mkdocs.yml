@@ -1,0 +1,5 @@
+site_name: My Vite React Project
+theme: material
+
+nav:
+  - Accueil: accueil.md
