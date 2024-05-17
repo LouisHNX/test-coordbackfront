@@ -1,4 +1,5 @@
-theme:
-  name: material
-  palette:
-    primary: deep
+nav:
+  - Accueil: accueil.md
+  - Installation: installation.md
+  - Utilisation: utilisation.md
+  - Contribution: contribution.md
