@@ -1,5 +1,5 @@
+site_name: My Vite React Project
+theme: material
+
 nav:
   - Accueil: accueil.md
-  - Installation: installation.md
-  - Utilisation: utilisation.md
-  - Contribution: contribution.md
