@@ -1,0 +1,33 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-json
+      - id: check-toml
+
+  - repo: https://github.com/eslint/eslint
+    rev: v8.2.0
+    hooks:
+      - id: eslint
+        args: ["--cache", "--format=json", "--ext", ".js,.jsx,.ts,.tsx"]
+
+  - repo: https://github.com/prettier/prettier
+    rev: v2.6.2
+    hooks:
+      - id: prettier
+        args: ["--cache", "--list-different"]
+
+  - repo: https://github.com/stylelint/stylelint
+    rev: v14.7.1
+    hooks:
+      - id: stylelint
+        args: ["--cache", "--formatter=json", "--syntax=scss"]
+
+  - repo: https://github.com/htmlhint/htmlhint
+    rev: v0.13.0
+    hooks:
+      - id: htmlhint
+        args: ["--config", ".htmlhintrc"]

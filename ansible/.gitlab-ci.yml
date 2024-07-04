@@ -9,8 +9,10 @@ build:
 
 deploy:
   stage: deploy
+  image: python:3.8
+  before_script:
+    - pip install ansible
   script:
-    - apt-get update && apt-get install -y ansible
     - ansible-playbook -i ansible/hosts ansible/deploy.yml
   only:
     - feat/ansible

@@ -1,0 +1,10 @@
+{
+  "extends": "htmlhint:recommended",
+  "rules": {
+    "attr-lowercase": true,
+    "attr-value-double-quotes": true,
+    "doctype-first": true,
+    "tag-pair": true,
+    "spec-char-escape": true
+  }
+}
